@@ -108,7 +108,39 @@
   </script>
   <body>
     <main>
-      <!-- ...existing code... -->
+      <audio
+        id="boda-audio"
+        src="music/Hasta mi final - Il Divo.mp3"
+        type="audio/mpeg"
+        autoplay
+        playsinline
+      >
+        Tu navegador no soporta audio HTML5.
+      </audio>
+   
+      <script>
+        // Autoplay en móvil y PC: reproduce al primer toque, clic o scroll en cualquier parte
+        function playAudio() {
+          var audio = document.getElementById("boda-audio");
+          if (audio.paused) {
+            audio.play();
+          }
+          document.removeEventListener("touchstart", playAudio);
+          document.removeEventListener("click", playAudio);
+          document.removeEventListener("scroll", playAudio);
+        }
+        document.addEventListener("touchstart", playAudio);
+        document.addEventListener("click", playAudio);
+        document.addEventListener("scroll", playAudio);
+
+        // Intentar reproducir al cargar (algunos navegadores lo permiten)
+        window.addEventListener("DOMContentLoaded", function () {
+          var audio = document.getElementById("boda-audio");
+          audio.play().catch(function () {});
+        });
+      </script>
+
+
       <section class="gallery">
         <img src="images/1.jpg" alt="Invitación de boda 1" />
         <div style="position: relative; width: 100%">
