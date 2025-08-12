@@ -1,48 +1,343 @@
-
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Invitación de Boda - Oscar & Ruth</title>
-<style>
-    body {
+  <head>
+    <meta charset="utf-8" />
+    <title>Invitación de Boda O &amp; R</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="description" content="Invitación de boda Oscar & Ruth" />
+
+    <link
+      href="https://static.canva.com/web/a6858c83c8851171.ltr.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://static.canva.com/web/static_font_4.ltr.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <style>
+      body {
         margin: 0;
         padding: 0;
+        background: #fff;
+        font-family: "Lustria", "Arimo", Arial, sans-serif;
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #fff;
-    }
-    img {
-        max-width: 100%;
+        min-height: 100vh;
+      }
+      h1 {
+        font-family: "Milton One Bold", serif;
+        color: #a97131;
+        text-align: center;
+        margin-top: 32px;
+        font-size: 2.2em;
+        letter-spacing: 1px;
+      }
+      .gallery {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        width: 100%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 24px 0;
+        box-sizing: border-box;
+      }
+      .gallery img {
+        width: 100%;
         height: auto;
-    }
-</style>
-</head>
-<body>
-<img src="images/image_1_1.png" alt="Invitación de boda">
-<img src="images/image_1_2.png" alt="Invitación de boda">
-<img src="images/image_2_1.png" alt="Invitación de boda">
-<img src="images/image_2_2.png" alt="Invitación de boda">
-<img src="images/image_2_3.png" alt="Invitación de boda">
-<img src="images/image_2_4.png" alt="Invitación de boda">
-<img src="images/image_3_1.png" alt="Invitación de boda">
-<img src="images/image_3_2.png" alt="Invitación de boda">
-<img src="images/image_4_1.png" alt="Invitación de boda">
-<img src="images/image_4_2.png" alt="Invitación de boda">
-<img src="images/image_4_3.png" alt="Invitación de boda">
-<img src="images/image_4_4.png" alt="Invitación de boda">
-<img src="images/image_5_1.png" alt="Invitación de boda">
-<img src="images/image_5_2.png" alt="Invitación de boda">
-<img src="images/image_5_3.png" alt="Invitación de boda">
-<img src="images/image_5_4.png" alt="Invitación de boda">
-<img src="images/image_6_1.png" alt="Invitación de boda">
-<img src="images/image_6_2.png" alt="Invitación de boda">
-<img src="images/image_7_1.png" alt="Invitación de boda">
-<img src="images/image_8_1.png" alt="Invitación de boda">
-<img src="images/image_9_1.png" alt="Invitación de boda">
-<img src="images/image_9_2.png" alt="Invitación de boda">
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        background: #faf9f6;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto;
+        transition: transform 0.2s;
+      }
+      .gallery img:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+      }
+      @media (max-width: 600px) {
+        .gallery {
+          gap: 12px;
+          padding: 12px 0;
+        }
+        .gallery img {
+          border-radius: 12px;
+        }
+        h1 {
+          font-size: 1.4em;
+          margin-top: 16px;
+        }
+      }
+      @media print {
+        body,
+        html {
+          background: #fff !important;
+        }
+        .gallery {
+          gap: 0 !important;
+          padding: 0 !important;
+        }
+        .gallery img {
+          page-break-inside: avoid;
+          break-inside: avoid;
+          width: 100% !important;
+          max-width: 100% !important;
+          margin-bottom: 12px !important;
+        }
+        main,
+        section,
+        h1 {
+          page-break-after: avoid;
+          break-after: avoid;
+        }
+      }
+    </style>
+  </head>
+  <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
+  <script>
+    window.onload = function () {
+      if (window.imageMapResize) imageMapResize();
+    };
+  </script>
+  <body>
+    <main>
+      <!-- ...existing code... -->
+      <section class="gallery">
+        <img src="images/1.jpg" alt="Invitación de boda 1" />
+        <div style="position: relative; width: 100%">
+          <img
+            src="images/2.jpg"
+            alt="Invitación de boda 2"
+            style="width: 100%; display: block"
+          />
+          <!-- Reloj TickCounter en el área indicada -->
+          <div
+            style="
+              position: absolute;
+              left: 50%;
+              top: 76.13%;
+              width: 56.95%;
+              height: 8.19%;
+              transform: translateX(-50%);
+              z-index: 2;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              pointer-events: none;
+            "
+          >
+            <div
+              style="
+                width: 100%;
+                height: 100%;
+                pointer-events: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <script>
+                (function (d, s, id) {
+                  var js,
+                    pjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s);
+                  js.id = id;
+                  js.src = "//www.tickcounter.com/static/js/loader.js";
+                  pjs.parentNode.insertBefore(js, pjs);
+                })(document, "script", "tickcounter-sdk");
+              </script>
+              <a
+                data-type="countdown"
+                data-id="7879002"
+                class="tickcounter"
+                style="
+                  display: block;
+                  left: 0;
+                  width: 100%;
+                  height: 0;
+                  position: relative;
+                  padding-bottom: 25%;
+                  margin: 0 auto;
+                "
+                title="My countdown"
+                href="//www.tickcounter.com/"
+                >My countdown</a
+              >
+            </div>
+          </div>
+        </div>
+        <img src="images/3.jpg" alt="Invitación de boda 3" />
+        <img
+          src="images/4.jpg"
+          alt="Invitación de boda 4"
+          usemap="#image-map-4"
+          style="width: 100%; display: block"
+        />
 
-</body>
+        <map name="image-map-4">
+          <!-- Primer área: Parroquia -->
+          <area
+            target="_blank"
+            alt="Ubicación Parroquia"
+            title="Ver ubicación en Google Maps"
+            href="https://www.google.com/maps/place/Parroquia+de+la+Pur%C3%ADsima+Concepci%C3%B3n/@20.7643861,-104.0830781,17z/data=!3m1!4b1!4m6!3m5!1s0x84266f6b9aefb4f7:0xb69c75b278d74289!8m2!3d20.7643861!4d-104.0804978!16s%2Fg%2F1tdywp8y?entry=tts&g_ep=EgoyMDI1MDcwNy4wIPu8ASoASAFQAw%3D%3D&skid=68c9034d-3f08-48bf-846b-11201a21d47d"
+            coords="349,297,1120,460"
+            shape="rect"
+          />
+          <!-- Segundo área: posición personalizada -->
+          <area
+            target="_blank"
+            alt="Enlace personalizado"
+            title="Enlace personalizado"
+            href="https://www.google.com/maps/place/Parroquia+de+la+Pur%C3%ADsima+Concepci%C3%B3n/@20.7643861,-104.0830781,17z/data=!3m1!4b1!4m6!3m5!1s0x84266f6b9aefb4f7:0xb69c75b278d74289!8m2!3d20.7643861!4d-104.0804978!16s%2Fg%2F1tdywp8y?entry=tts&g_ep=EgoyMDI1MDcwNy4wIPu8ASoASAFQAw%3D%3D&skid=68c9034d-3f08-48bf-846b-11201a21d47d"
+            coords="258,684,1252,1675"
+            shape="rect"
+          />
+        </map>
+        <style>
+          @media (max-width: 700px) {
+            img[usemap] {
+              width: 100% !important;
+              height: auto !important;
+            }
+          }
+        </style>
+        <img
+          src="images/5.jpg"
+          alt="Invitación de boda 5"
+          usemap="#image-map-5"
+          style="width: 100%; display: block"
+        />
+
+        <map name="image-map-5">
+          <!-- Primer área: dirección Everardo Topete 23 -->
+          <area
+            target="_blank"
+            alt="Ubicación Recepción"
+            title="Ver ubicación en Google Maps"
+            href="https://www.google.com/maps/place/Everardo+Topete+23,+La+Frontera,+46500+Etzatl%C3%A1n,+Jal./@20.7651572,-104.0902999,17z/data=!3m1!4b1!4m6!3m5!1s0x84266f68976c3d7d:0x7d2e20949a07ccd5!8m2!3d20.7651572!4d-104.0877196!16s%2Fg%2F11csj9tv77?entry=tts&g_ep=EgoyMDI1MDcwNy4wIPu8ASoASAFQAw%3D%3D&skid=7afa9af6-82d2-47d1-a653-b3ac4c0bdcda"
+            coords="455,240,1106,356"
+            shape="rect"
+          />
+          <!-- Segundo área: zona personalizada -->
+          <area
+            target="_blank"
+            alt="Ubicación Recepción (zona grande)"
+            title="Ver ubicación en Google Maps"
+            href="https://www.google.com/maps/place/Everardo+Topete+23,+La+Frontera,+46500+Etzatl%C3%A1n,+Jal./@20.7651572,-104.0902999,17z/data=!3m1!4b1!4m6!3m5!1s0x84266f68976c3d7d:0x7d2e20949a07ccd5!8m2!3d20.7651572!4d-104.0877196!16s%2Fg%2F11csj9tv77?entry=tts&g_ep=EgoyMDI1MDcwNy4wIPu8ASoASAFQAw%3D%3D&skid=7afa9af6-82d2-47d1-a653-b3ac4c0bdcda"
+            coords="297,560,1199,1761"
+            shape="rect"
+          />
+        </map>
+        <style>
+          @media (max-width: 700px) {
+            img[usemap] {
+              width: 100% !important;
+              height: auto !important;
+            }
+          }
+        </style>
+        <img
+          src="images/6.jpg"
+          alt="Invitación de boda 6"
+          usemap="#image-map-6"
+          style="width: 100%; display: block"
+        />
+
+        <map name="image-map-6">
+          <!-- Primer área: Parroquia -->
+          <area
+            target="_blank"
+            alt="Ubicación Parroquia"
+            title="Ver ubicación en Google Maps"
+            href="https://www.google.com/maps/place/Parroquia+de+la+Pur%C3%ADsima+Concepci%C3%B3n/@20.7643861,-104.0804978,17z/data=!3m1!4b1!4m6!3m5!1s0x84266f6b9aefb4f7:0xb69c75b278d74289!8m2!3d20.7643861!4d-104.0804978!16s%2Fg%2F1tdywp8y?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D"
+            coords="458,325,653,528"
+            shape="rect"
+          />
+          <!-- Segundo área: Everardo Topete 23 -->
+          <area
+            target="_blank"
+            alt="Ubicación Recepción"
+            title="Ver ubicación en Google Maps"
+            href="https://www.google.com/maps/place/Everardo+Topete+23,+La+Frontera,+46500+Etzatl%C3%A1n,+Jal./@20.7651571,-104.0925852,17z/data=!3m1!4b1!4m6!3m5!1s0x84266f68976c3d7d:0x7d2e20949a07ccd5!8m2!3d20.7651572!4d-104.0877196!16s%2Fg%2F11csj9tv77?entry=tts&g_ep=EgoyMDI1MDcwNi4wIPu8ASoASAFQAw%3D%3D&skid=526e8ebd-f14a-4e6a-8a72-2a02a6119e58"
+            coords="925,569,1120,772"
+            shape="rect"
+          />
+        </map>
+        <style>
+          @media (max-width: 700px) {
+            img[usemap] {
+              width: 100% !important;
+              height: auto !important;
+            }
+          }
+        </style>
+        <img src="images/7.jpg" alt="Invitación de boda 7" />
+        <img src="images/8.jpg" alt="Invitación de boda 8" />
+        <img
+          src="images/9.jpg"
+          alt="Invitación de boda 9"
+          usemap="#image-map-9"
+          style="width: 100%; display: block"
+        />
+
+        <map name="image-map-9">
+          <!-- Confirmar asistencia Oscar -->
+          <area
+            target="_blank"
+            alt="Confirmar asistencia Oscar"
+            title="Confirmar asistencia Oscar"
+            href="https://api.whatsapp.com/send/?phone=523327828242&text=Gracias+por+la+invitaci%C3%B3n%2C+confirmo+mi+asistencia%2C+ah%C3%AD+estar%C3%A9+para+festejar+su+gran+noche%C2%A1%0A&type=phone_number&app_absent=0"
+            coords="222,951,704,1070"
+            shape="rect"
+          />
+          <!-- Confirmar asistencia Ruth -->
+          <area
+            target="_blank"
+            alt="Confirmar asistencia Ruth"
+            title="Confirmar asistencia Ruth"
+            href="https://api.whatsapp.com/send/?phone=523861119653&text=Hola%2C+gracias+por+la+invitaci%C3%B3n.+%0ATe+confirmo+mi+asistencia%2C+nos+vemos+el+gran+d%C3%ADa+para+festejar%C2%A1&type=phone_number&app_absent=0"
+            coords="825,951,1307,1070"
+            shape="rect"
+          />
+          <!-- No asistir Oscar -->
+          <area
+            target="_blank"
+            alt="No asistir Oscar"
+            title="No asistir Oscar"
+            href="https://api.whatsapp.com/send/?phone=523327828242&text=Hola%2C+gracias+por+la+invitaci%C3%B3n%2C+pero+lamentablemente+no+podr%C3%A9+asistir+por+causas+mayores%2C+pero+deseo+que+tengan+un+feliz+matrimonio+y+disfruten+a+lo+m%C3%A1ximo+su+gran+noche.+&type=phone_number&app_absent=0"
+            coords="223,1334,705,1453"
+            shape="rect"
+          />
+          <!-- No asistir Ruth -->
+          <area
+            target="_blank"
+            alt="No asistir Ruth"
+            title="No asistir Ruth"
+            href="https://api.whatsapp.com/send/?phone=523861119653&text=Hola%2C+gracias+por+la+invitaci%C3%B3n%2C+pero+lamentablemente+no+podr%C3%A9+asistir+por+causas+mayores%2C+pero+les+deseo+un+feliz+matrimonio+y+que+pasen+la+mejor+noche+de+sus+vidas+festejando.++&type=phone_number&app_absent=0"
+            coords="825,1339,1307,1458"
+            shape="rect"
+          />
+        </map>
+        <style>
+          @media (max-width: 700px) {
+            img[usemap] {
+              width: 100% !important;
+              height: auto !important;
+            }
+          }
+        </style>
+      </section>
+
+      <!-- ...existing code... -->
+    </main>
+  </body>
 </html>
