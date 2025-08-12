@@ -126,11 +126,9 @@
           }
           document.removeEventListener("touchstart", playAudio);
           document.removeEventListener("click", playAudio);
-         
         }
         document.addEventListener("touchstart", playAudio);
         document.addEventListener("click", playAudio);
-  
 
         window.addEventListener("DOMContentLoaded", function () {
           var audio = document.getElementById("boda-audio");
@@ -139,49 +137,59 @@
       </script>
 
       <section class="gallery">
-        <div style="position: relative; width: 100%;">
-  <img src="images/1.jpg" alt="Invitación de boda 1" style="width:100%; display:block;">
-  <!-- Botón de Play SVG responsivo en el área 665,1773,766,1863 -->
-  <button
-    onclick="playAudioManual();"
-    style="
-      position: absolute;
-      left: 51.61%;  /* (665+766)/2 / 1400 * 100 = 51.61% (1400px ancho base) */
-      top: 86%;   /* (1773+1863)/2 / 2100 * 100 = 86.98% (2100px alto base) */
-      width: 7.21%;  /* (766-665)/1400*100 = 7.21% */
-      height: 4.29%; /* (1863-1773)/2100*100 = 4.29% */
-      min-width: 40px;
-      min-height: 40px;
-      max-width: 80px;
-      max-height: 80px;
-      background: rgba(255,255,255,0.7);
-      border: none;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      z-index: 10;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-      transition: background 0.2s;
-      transform: translate(-50%, -50%);
-    "
-    aria-label="Reproducir música"
-  >
-    <svg width="32" height="32" viewBox="0 0 48 48" fill="#a97131" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="24" cy="24" r="24" fill="white" opacity="0.7"/>
-      <polygon points="18,15 36,24 18,33" fill="#a97131"/>
-    </svg>
-  </button>
-</div>
-<script>
-  function playAudioManual() {
-    var audio = document.getElementById("boda-audio");
-    if (audio.paused) {
-      audio.play();
-    }
-  }
-</script>
+        <div style="position: relative; width: 100%">
+          <img
+            src="images/1.jpg"
+            alt="Invitación de boda 1"
+            style="width: 100%; display: block"
+          />
+          <!-- Botón de Play SVG responsivo en el área 665,1773,766,1863 -->
+          <button
+            onclick="playAudioManual();"
+            style="
+              position: absolute;
+              left: 50%; /* (665+766)/2 / 1400 * 100 = 51.61% (1400px ancho base) */
+              top: 86%; /* (1773+1863)/2 / 2100 * 100 = 86.98% (2100px alto base) */
+              width: 7.21%; /* (766-665)/1400*100 = 7.21% */
+              height: 4.29%; /* (1863-1773)/2100*100 = 4.29% */
+              min-width: 40px;
+              min-height: 40px;
+              max-width: 80px;
+              max-height: 80px;
+              background: rgba(255, 255, 255, 0.7);
+              border: none;
+              border-radius: 50%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              z-index: 10;
+              box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+              transition: background 0.2s;
+              transform: translate(-50%, -50%);
+            "
+            aria-label="Reproducir música"
+          >
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 48 48"
+              fill="#a97131"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="24" cy="24" r="24" fill="white" opacity="0.7" />
+              <polygon points="18,15 36,24 18,33" fill="#a97131" />
+            </svg>
+          </button>
+        </div>
+        <script>
+          function playAudioManual() {
+            var audio = document.getElementById("boda-audio");
+            if (audio.paused) {
+              audio.play();
+            }
+          }
+        </script>
         <div style="position: relative; width: 100%">
           <img
             src="images/2.jpg"
@@ -317,7 +325,7 @@
           }
         </style>
         <img
-          src="images/6.jpg"
+          src="images/6.jpg?v=2"
           alt="Invitación de boda 6"
           usemap="#image-map-6"
           style="width: 100%; display: block"
